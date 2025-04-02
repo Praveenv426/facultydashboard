@@ -4,7 +4,7 @@ import { Header } from "@/components/layout/Header";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { BarChart, LineChart, PieChart } from "@/components/ui/chart";
+import { BarChart, LineChart, PieChart } from "@/components/ui/chart-types";
 import { Calendar, Download, FileDown, Filter, Printer } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
