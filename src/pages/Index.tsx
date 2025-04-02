@@ -1,4 +1,3 @@
-
 import { Sidebar } from "@/components/layout/Sidebar";
 import { Header } from "@/components/layout/Header";
 import { StatsCard } from "@/components/dashboard/StatsCard";
@@ -98,39 +97,39 @@ const Index = () => {
     }
   ];
 
-  // Sample data for leave requests
+  // Fixed leave requests with correct status types
   const leaveRequests = [
     { 
       id: "1", 
       title: "Medical Leave", 
       description: "2 days (Oct 25-26)", 
-      status: "pending", 
+      status: "pending" as const, 
       date: "Requested: Oct 20" 
     },
     { 
       id: "2", 
       title: "Conference Attendance", 
       description: "3 days (Nov 10-12)", 
-      status: "approved", 
+      status: "approved" as const, 
       date: "Requested: Oct 5" 
     },
     { 
       id: "3", 
       title: "Personal Leave", 
       description: "1 day (Oct 8)", 
-      status: "rejected", 
+      status: "rejected" as const, 
       date: "Requested: Oct 1" 
     }
   ];
 
-  // Sample data for notifications
+  // Fixed notifications with correct status types
   const notifications = [
     { 
       id: "1", 
       title: "Faculty Meeting", 
       description: "Tomorrow at 3:00 PM in Conference Room A", 
       date: "1 hour ago", 
-      status: "new" 
+      status: "new" as const 
     },
     { 
       id: "2", 
