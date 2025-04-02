@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import AttendancePage from "./pages/attendance/AttendancePage";
+import LeavePage from "./pages/leave/LeavePage";
 
 const queryClient = new QueryClient();
 
@@ -19,12 +20,12 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/attendance" element={<AttendancePage />} />
+          <Route path="/leave" element={<LeavePage />} />
           {/* Placeholder routes for future implementation */}
           <Route path="/timetable" element={<NotFound />} />
           <Route path="/course-material" element={<NotFound />} />
           <Route path="/assignments" element={<NotFound />} />
           <Route path="/performance" element={<NotFound />} />
-          <Route path="/leave" element={<NotFound />} />
           <Route path="/messages" element={<NotFound />} />
           <Route path="/reports" element={<NotFound />} />
           <Route path="/settings" element={<NotFound />} />
